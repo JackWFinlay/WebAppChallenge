@@ -1,0 +1,56 @@
+$font-stack:    "Helvetica Neue", Helvetica, Arial, sans-serif;
+$primary-color: #fff;
+$soft-black: #222;
+
+a {
+	padding: 4px 6px;
+	text-decoration: none;
+	color: $soft-black;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+a:hover {
+	text-decoration: underline;
+	padding: 4px 4px 2px 4px;
+	border: 2px solid $soft-black;
+	border-radius: 5px;
+}
+
+body {
+	font-family: $font-stack;
+	color: $primary-color;
+	margin: 0;
+    background: $soft-black;
+}
+
+h1 {
+    font-size: 60px
+}
+
+p {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.button {
+	padding: 4px 4px 2px 4px;
+	text-decoration: none;
+	border-radius: 5px;
+	border: 2px solid $soft-black;
+	min-width: 100px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+
+.display-inline-block{
+	display: inline-block;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
