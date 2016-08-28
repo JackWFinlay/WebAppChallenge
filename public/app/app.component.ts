@@ -4,7 +4,7 @@ import { bootstrap } from '@angular/platform-browser-dynamic';
 @Component({
   selector: 'main-app',
   styles: [],
-  template: '<h1>Test</h1>'
+  template: '<generator></generator>'
 })
 
 export class AppComponent {}

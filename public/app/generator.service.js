@@ -9,20 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-var AppComponent = (function () {
-    function AppComponent() {
+var GeneratorService = (function () {
+    function GeneratorService() {
+        this.challenge = {
+            frontend: 'React',
+            backend: 'Laravel',
+            database: 'Oracle'
+        };
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'main-app',
-            styles: [],
-            template: '<generator></generator>'
-        }), 
+    GeneratorService.prototype.getChallenge = function () {
+        console.log(this.challenge);
+        return Promise.resolve(this.challenge);
+    };
+    GeneratorService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], GeneratorService);
+    return GeneratorService;
 }());
-exports.AppComponent = AppComponent;
-platform_browser_dynamic_1.bootstrap(AppComponent);
-//# sourceMappingURL=app.component.js.map
+exports.GeneratorService = GeneratorService;
+//# sourceMappingURL=generator.service.js.map

@@ -9,20 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-var AppComponent = (function () {
-    function AppComponent() {
+var platform_browser_1 = require('@angular/platform-browser');
+var generator_component_1 = require('./generator.component');
+var GeneratorModule = (function () {
+    function GeneratorModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'main-app',
-            styles: [],
-            template: '<generator></generator>'
+    GeneratorModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [generator_component_1.GeneratorComponent],
+            bootstrap: [generator_component_1.GeneratorComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], GeneratorModule);
+    return GeneratorModule;
 }());
-exports.AppComponent = AppComponent;
-platform_browser_dynamic_1.bootstrap(AppComponent);
-//# sourceMappingURL=app.component.js.map
+exports.GeneratorModule = GeneratorModule;
+//# sourceMappingURL=generator.module.js.map
